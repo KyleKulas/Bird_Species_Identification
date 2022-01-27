@@ -26,13 +26,6 @@ def predict():
     image_path = './static/images/' + imagefile.filename 
     imagefile.save(image_path)
 
-    # img = image.load_img(image_path, target_size=(300, 300))
-    # x = image.img_to_array(img)
-    # x = np.expand_dims(x, axis=0)
-
-    # images = np.vstack([x])
-    # classes = model.predict(images, batch_size=10)
-
     # load an image from file
     image = load_img(image_path, target_size=(256, 256))
     image_array = img_to_array(image)
